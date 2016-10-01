@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=1]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "\nextends Panel\n\nfunc _Button_on_pressed():\n\tget_node(\"Label\").set_text(\"dogedogedoge\")\n\tpass\n\nfunc _ready():\n\tget_node(\"Button\").connect(\"pressed\", self, \"_Button_on_pressed\")\n\tpass\n"
+
+[node name="Panel" type="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1.0
+margin/top = 1.0
+margin/right = 905.0
+margin/bottom = 511.0
+script/script = SubResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 159.0
+margin/top = 265.0
+margin/right = 282.0
+margin/bottom = 311.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "press me"
+flat = false
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 169.0
+margin/top = 163.0
+margin/right = 284.0
+margin/bottom = 209.0
+text = "hello godot"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
