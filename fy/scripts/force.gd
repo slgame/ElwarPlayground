@@ -4,16 +4,16 @@ extends Node
 # 一方势力，这就是这个类
 
 var piety = 0 # 虔诚点数
-var selected = set() # 当前选择单位
-var units = set() # 拥有单位
+var selected = [] # 当前选择单位
+var units = [] # 拥有单位
 
-var perks = set() # 神赐
+var perks = [] # 神赐
 var powers = [] # 神威
 
 # 外交关系
 var relation = {
-	war: set(),
-	peace: set(),
+	'war': [],
+	'peace': [],
 }
 
 # 移动单位
