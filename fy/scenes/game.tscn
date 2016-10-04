@@ -104,7 +104,7 @@ alignment = 0
 
 [node name="test" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 138.464, 266.858 )
+transform/pos = Vector2( 65.7577, 62.3716 )
 
 [node name="force_1" type="Node" parent="."]
 
